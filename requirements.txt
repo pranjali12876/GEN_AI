@@ -1,8 +1,77 @@
 streamlit
+pandas
+numpy
+matplotlib
+plotly
+
+streamlit
+#Create web application using python
+#It converts your python scripts into a web using
+#Use for chat interface,button,text inputs
+
 langchain
+#langchain is a framework to built applications using LLM
+#Connects LLM with Data
+#Manages prompts
+#Creates chains(Input->Processing->output)
+
 langchain_community
+#Extra integration and tools provided by community 
+#Database connectors,document loaders
+#FAISS Vector store(facebook ai similarity search)
+
 langchain_core
-langchain-text-splitters
-langchain_huggingface
-sentence-transformers
-faiss-cpu
+#Core base components of langchain
+#Base classes,Runnables,Core prompt templates
+#NOTE:- We are not using it directly but it is required by langchain
+
+ollama
+#Run LLMs locally on your computer
+#It connects your app to locally installed models
+
+#SUMMARY
+#streamlit->creates UI 
+#langchain->connects LLMs+Data
+#langchain_community->Extra Documents(FAISS,loaders)
+#langchain_core->internal backbone
+#ollama->runs local LLM
+
+#User->streamlit UI->langchain->FAISS(Vector search)->ollama(LLMs)->Response(streamlit UI)
+
+streamlit
+#Create web application using python
+#It converts your python scripts into a web using
+#Use for chat interface,button,text inputs
+
+langchain
+#langchain is a framework to built applications using LLM
+#Connects LLM with Data
+#Manages prompts
+#Creates chains(Input->Processing->output)
+
+langchain_community
+#Extra integration and tools provided by community 
+#Database connectors,document loaders
+#FAISS Vector store(facebook ai similarity search)
+
+langchain_core
+#Core base components of langchain
+#Base classes,Runnables,Core prompt templates
+#NOTE:- We are not using it directly but it is required by langchain
+
+ollama
+#Run LLMs locally on your computer
+#It connects your app to locally installed models
+
+#SUMMARY
+#streamlit->creates UI 
+#langchain->connects LLMs+Data
+#langchain_community->Extra Documents(FAISS,loaders)
+#langchain_core->internal backbone
+#ollama->runs local LLM
+
+#User->streamlit UI->langchain->FAISS(Vector search)->ollama(LLMs)->Response(streamlit UI)
+
+langchain
+openai
+streamlit
