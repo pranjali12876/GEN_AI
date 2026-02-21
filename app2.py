@@ -7,6 +7,10 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.llms import Ollama
 from langchain_core.output_parsers import StrOutputParser
 
+import pkg_resources
+st.write([pkg.key for pkg in pkg_resources.working_set])
+
+
 st.set_page_config(page_title="C++ rag chatbot",layout="wide")
 st.title("💭 C++ rag chatbot")
 
@@ -50,4 +54,5 @@ if(text_input):
 
     response = llm.invoke(prompt)
     st.subheader("Answers")
+
     st.write(response)
